@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lol</title>
+
+    <style>
+        hZ{
+            color: blue;
+        }
+
+        img{
+            width: 500px;
+            height: 250px;
+        }
+
+        .writing{
+            background-color: rgb(0, 140, 255);
+            text-align: center;
+        }
+
+        .writing:hover{
+            background-color: rgb(0, 255, 0);
+        }
+    </style>
+
+    <script>
+        var myFavouriteNumber = 21;
+        var myName = "Evan";
+        var thisIsTrue = true;
+        var likes = 0;
+
+        document.onload(greeting())
+
+        var myFavouriteNumber = 21;
+var myName = "Evan";
+var thisIsTrue = true;
+var comment = [];
+var likes = 0;
+
+if(likes == 10){
+    console.log("10 People Liked Your Post!")
+}
+else if(likes == 20){
+    console.log("20 People Liked Your Post!")
+}
+else{}
+
+var names = ["Evan", "Rowan", "Senan"];
+
+console.log(names[2])
+
+document.onload(greeting)
+
+function addLike(){
+    likes++;
+    console.log(likes)
+}
+
+function addComment(){
+    comment.push(document.getElementById("commentBox").value);
+    document.getElementById("comments").innerHTML = "";
+
+    for(var count = 0; count < comment.length; count++){
+        document.getElementById("comments").innerHTML += comment[count] + "/n";
+        console.log(comment[count])
+    }
+}
+
+function greeting(){
+    var greeting = "Hello " + myName + ", welcome to the Anti-Club.";
+    document.getElementById("greetings").innerHTML = greeting
+}
+
+function changeFont(){
+    document.getElementById("title").style.fontFamily = "Impact";
+    document.getElementById("title").style.fontSize = 10;
+}
+    </script>
+</head>
+<body>
+    <div id="greetings">
+
+    </div>
+
+    <div class="writing">
+        <h2>Welcome</h2>
+        <p>This is my cool website</p>
+    </div>
+    <img src=https://64.media.tumblr.com/9ebebf66e81b52ea92dde0761b409738/tumblr_neqlhfGGfM1rytgfho1_500.jpg>
+
+    <input type="text" id="commentBox">
+    <button onclick="addComment()">Send</button>
+
+    <div class="comments">
+
+    </div>
+
+    <div class="menu">
+        <button type="button" class="btn btn-primary">Click for nothing</button>
+    </div>
+    
+    <button onclick="addLike()">Like</button>
+</body>
+</html>
